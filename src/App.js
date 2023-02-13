@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import * as React from "react"
+import configData from "./data/site-data.json"
+import Header from "./header"
+import MainComponent from "./main_component"
+import Footer from "./footer"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header siteTitle={configData.header.title} menuItems = {configData.header.menus} />
+        <main><MainComponent mainData ={configData.mainData} /></main>
+        <Footer/>
     </div>
   );
 }

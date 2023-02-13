@@ -1,0 +1,37 @@
+.main-content {
+  height: 600px;
+  background: #273141;
+}
+
+.carousel-container {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  align-self: center;
+  justify-content: center;
+  padding-top: 90px;
+}
+
+.color {
+    color: black;
+}
+
+.content-value {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Poppins';
+  font-size: 3vw;
+  color: #EBEBEB;
+}
+
+.scroll-text  {
+  text-align: center;
+  padding-top: 1.5vw;
+  color: #B0BAC7;
+  font-size: 1.3vw;
+}
+.caron {
+  text-align: center;
+  display: block;
+  background: #273141;
+}

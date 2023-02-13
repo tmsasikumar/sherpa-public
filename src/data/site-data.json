@@ -1,0 +1,25 @@
+{
+  "header": {
+    "title": "SherpaLabs",
+    "menus": [
+      "Mission",
+      "Offerings"
+    ]
+  },
+  "mainData": {
+    "mainContent": [
+      {
+        "content": "Founded by ThoughtWorks Alums - Pioneers of agile way of software development",
+        "image": "./images/agile-new.png"
+      },
+      {
+        "content": "Real world Organisation Projects that helps build strong foundational skills",
+        "image": "./images/placement.jpeg"
+      },
+      {
+        "content": "Placement in well funded, tech-startups looking for quality talent",
+        "image": "./images/placement.jpeg"
+      }
+    ]
+  }
+}
