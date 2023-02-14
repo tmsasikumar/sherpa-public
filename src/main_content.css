@@ -1,6 +1,6 @@
 .main-content {
-  height: 600px;
   background: #273141;
+  overflow: auto;
 }
 
 .carousel-container {
@@ -10,10 +10,6 @@
   align-self: center;
   justify-content: center;
   padding-top: 90px;
-}
-
-.color {
-    color: black;
 }
 
 .content-value {
@@ -26,13 +22,16 @@
 
 .scroll-text  {
   text-align: center;
+  line-height: 0;
   padding-top: 1.5vw;
   color: #B0BAC7;
   font-size: 1.3vw;
-  background: #273141;
 }
 .caron {
   text-align: center;
   display: block;
-  background: #273141;
+}
+
+.scrollmore-container {
+  padding-top: 10px;
 }
