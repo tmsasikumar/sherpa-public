@@ -20,6 +20,10 @@
         "content": "Placement in well funded, tech-startups looking for quality talent",
         "image": "./images/placement.jpeg"
       }
-    ]
+    ],
+    "offeringContent" : [{
+      "title": "Pair Programming",
+      "list" : ["Learn by pairing with mentors", "10x speed learning by pairing"]
+    }]
   }
 }
