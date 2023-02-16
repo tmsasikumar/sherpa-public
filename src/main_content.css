@@ -1,6 +1,7 @@
 .main-content {
   background: #273141;
   overflow: auto;
+  min-height: 95vh;
 }
 
 .carousel-container {
@@ -9,29 +10,55 @@
   margin-right: 20%;
   align-self: center;
   justify-content: center;
-  padding-top: 90px;
+  padding-top: 8%;
 }
 
 .content-value {
   text-align: center;
   margin-bottom: 50px;
   font-family: 'Poppins';
-  font-size: 3vw;
+  font-size: 2vw;
   color: #EBEBEB;
 }
 
 .scroll-text  {
   text-align: center;
-  line-height: 0;
+  line-height: 5px;
   padding-top: 1.5vw;
   color: #B0BAC7;
   font-size: 1.3vw;
+  padding-bottom: 10px;
 }
-.caron {
-  text-align: center;
-  display: block;
-}
+
 
 .scrollmore-container {
   padding-top: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .content-value {
+    padding-top: 10vh;
+    font-size: 24px;
+  }
+
+  .carousel-container {
+    min-height: 80vh;
+  }
+
+  .scroll-text {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+
+  .scrollmore-container {
+    padding-top: 8px;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    bottom: -40vh;
+  }
+
 }

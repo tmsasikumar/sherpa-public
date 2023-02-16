@@ -14,7 +14,7 @@
 .header-title {
   margin-left: 60px;
   width: 150px;
-  font-family: Sana;
+  font-family: Saira;
   color: #a3fa8d;
   margin-bottom: 0;
   align-self: center;
@@ -40,6 +40,8 @@
 
 .nav-link {
   color: white !important;
+  font-family: "Roboto Light";
+  font-size: 18px;
 }
 
 .active-nav-link {

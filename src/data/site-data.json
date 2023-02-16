@@ -21,9 +21,23 @@
         "image": "./images/placement.jpeg"
       }
     ],
-    "offeringContent" : [{
-      "title": "Pair Programming",
-      "list" : ["Learn by pairing with mentors", "10x speed learning by pairing"]
-    }]
+    "offeringContent": {
+      "Pair Programming": [
+        "Learn by pairing with mentors",
+        "10x speed learning by pairing"
+      ],
+      "Emerging Startups" : [
+        "Work with emerging startups",
+        "Opportunity to get placed directly in the startup"
+      ],
+      "Community" : [
+        "Become Part of a community of developers",
+        "Support in overall growth and aspects of Career"
+      ],
+      "Others" : [
+        "Learn best practises in development and testing",
+        "Exposure to all industrial stuff"
+      ]
+    }
   }
 }

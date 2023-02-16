@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'Saira';
+  src: local('Saira'), url(./fonts/Saira-Regular.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url(./fonts/Poppins-Regular.ttf) format('opentype');
+}
