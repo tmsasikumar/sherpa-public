@@ -1,0 +1,48 @@
+.offerings-content {
+  background: #273141;
+  overflow: auto;
+  min-height: 95vh;
+}
+
+.offerings-container{
+  width: 65%;
+  margin-left: 17.5%;
+  margin-right: 17.5%;
+  padding-top: 5%;
+}
+
+.offerings-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  font-family: 'Poppins';
+  justify-content: center;
+  font-weight: 500;
+  flex-wrap: wrap;
+  color: #EBEBEB;
+}
+
+.offering-text {
+  display: inline-block;
+  margin:  0 4px;
+}
+
+.offering-title-content {
+  margin-top: 29px;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+color: #EBEBEB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offering-card-content {
+  margin-top: 29px;
+  border: 1px solid #444444;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}

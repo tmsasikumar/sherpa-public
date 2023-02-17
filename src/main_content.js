@@ -1,7 +1,7 @@
 import * as React from "react"
 import "./main_content.css"
 import {Image} from "react-bootstrap";
-import {ReactComponent as ArrowDown} from './images/caron.svg';
+import { ReactComponent as ArrowDown } from './images/caron.svg';
 
 const MainContent = ({mainContent}) => {
     return (

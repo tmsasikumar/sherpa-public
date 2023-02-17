@@ -22,6 +22,13 @@
       }
     ],
     "offeringContent": {
+
+      "title": "What we offer ?",
+
+      "titleContent": "We have mutiple offerings to upskill candidates and we are different from other players",
+
+      "offeringCarousel": {
+
       "Pair Programming": [
         "Learn by pairing with mentors",
         "10x speed learning by pairing"
@@ -38,6 +45,7 @@
         "Learn best practises in development and testing",
         "Exposure to all industrial stuff"
       ]
+    }
     }
   }
 }
