@@ -31,11 +31,17 @@
 .offering-title-content {
   margin-top: 29px;
   font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-color: #EBEBEB;
+  font-style: normal;
+  font-weight: 400;
+  color: #EBEBEB;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.offering-logo-container {
+  width: 30%;
+  display: flex;
   justify-content: center;
 }
 
@@ -45,4 +51,19 @@ color: #EBEBEB;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
+}
+
+.offering-card {
+  width: 100%;
+  min-height: 308px;
+  background: #333F52;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
 }
