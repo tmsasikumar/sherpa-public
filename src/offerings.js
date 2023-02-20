@@ -5,10 +5,32 @@ import Card from 'react-bootstrap/Card';
 import {includes} from "lodash";
 import {useState} from "react";
 import { ReactComponent as OfferingLogo } from './images/offeringlogo.svg';
+import { ReactComponent as OfferingLogoArrow } from './images/offering-logo-arrow.svg';
+import Carousel from "react-multi-carousel";
+import 'react-multi-carousel/lib/styles.css';
 
 const Offerings = ({ offeringContent }) => {
     const words = offeringContent.title.split(' ');
     const [carouselkey, setCarouselKey] = useState(Object.keys(offeringContent.offeringCarousel)[0]);
+    const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 4
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 3
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 2
+        }
+    };
 
     let OfferingKeys = Object.keys(offeringContent.offeringCarousel);
     return (
@@ -35,6 +57,9 @@ const Offerings = ({ offeringContent }) => {
                 <div className="offering-card-content">
                     <div className="offering-logo-container">
                         <OfferingLogo />
+                        <span className="arrow">
+                        <OfferingLogoArrow  />
+                            </span>
                     </div>
                     <Card className="offering-card">
                         <Card.Img variant="top" src="holder.js/100px180" />
@@ -56,24 +81,33 @@ const Offerings = ({ offeringContent }) => {
                     </Card>
                 </div>
                 <div className="offering-control">
-                    <div className="cards-wrapper">
-                        {
-                            OfferingKeys.map((key, index) =>{
+                    <Carousel
+                        swipeable={false}
+                        draggable={false}
+                        showDots={true}
+                        responsive={responsive}
+                        ssr={true} // means to render carousel on server-side.
+                        infinite={true}
+                        autoPlay={false}
+                        autoPlaySpeed={1000}
+                        keyBoardControl={true}
+                        customTransition="all .5"
+                        transitionDuration={500}
+                        containerClass="carousel-container"
+                        removeArrowOnDeviceType={["tablet", "mobile"]}
+                        dotListClass="custom-dot-list-style"
+                        itemClass="carousel-item-padding-40-px"
+                    >
+                        {OfferingKeys.map((key, index) => {
                                 return (
-                                    <div className="card" onClick={() => setCarouselKey(key)}>
-                                        <div className="card-body">
-                                            <h5 className="card-title">{key}</h5>
-                                            <p className="card-text">Some quick example text to build on the card title and make
-                                                up the bulk of the card's content.</p>
-                                            <a href="#" className="btn btn-primary">Go somewhere</a>
+                                    <div className="card offering-key-card">
+                                    <div className="card-body offering-key" onClick={() => setCarouselKey(key)}>{key}</div>
                                         </div>
-                                    </div>
                                 )
-                            })
-                        }
+                            }
+                        )}
+                    </Carousel>
 
-
-                    </div>
                 </div>
             </div>
         </section>
