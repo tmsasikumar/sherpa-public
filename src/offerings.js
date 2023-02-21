@@ -2,8 +2,8 @@ import * as React from "react"
 import "./offerings.css";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import {includes} from "lodash";
-import {useState} from "react";
+import { includes } from "lodash";
+import { useState } from "react";
 import { ReactComponent as OfferingLogo } from './images/offeringlogo.svg';
 import { ReactComponent as OfferingLogoArrow } from './images/offering-logo-arrow.svg';
 import Carousel from "react-multi-carousel";
@@ -39,10 +39,10 @@ const Offerings = ({ offeringContent }) => {
                 <div className="offering-title">
                     {words.map((word, index) => {
                         let style;
-                        if (includes([0,1], index)) {
+                        if (includes([0, 1], index)) {
                             style = { color: '#EBEBEB' }
                         }
-                        else if (includes([2,3], index)) {
+                        else if (includes([2, 3], index)) {
                             style = { color: '#A3FA8D' }
                         } else {
                             style = { color: '#EBEBEB' }
@@ -58,25 +58,27 @@ const Offerings = ({ offeringContent }) => {
                     <div className="offering-logo-container">
                         <OfferingLogo />
                         <span className="arrow">
-                        <OfferingLogoArrow  />
-                            </span>
+                            <OfferingLogoArrow />
+                        </span>
+                    </div>
+                    <div>
+                        <hr style={{ color: "#8E8E8E", height: "170px", width: "0px", position: "relative" }} />
                     </div>
                     <Card className="offering-card">
-                        <Card.Img variant="top" src="holder.js/100px180" />
                         <Card.Body>
-                            <Card.Title>{carouselkey}</Card.Title>
+                            <Card.Title className="offering-card-title">{carouselkey}</Card.Title>
                             <Card.Text>
-                               <ul>
-                                   {
-                                       offeringContent.offeringCarousel[carouselkey].map((item, index) =>{
-                                           return (
-                                           <li>{item}</li>
-                                           )
-                                       })
-                                   }
-                               </ul>
+                                <ul>
+                                    {
+                                        offeringContent.offeringCarousel[carouselkey].map((item, index) => {
+                                            return (
+                                                <li className="offering-list-items"><span className="offering-item">{item}</span></li>
+                                            )
+                                        })
+                                    }
+                                </ul>
                             </Card.Text>
-                            <Button variant="primary">Explore</Button>
+                            <Button className="offering-card-btn">Explore</Button>
                         </Card.Body>
                     </Card>
                 </div>
@@ -99,12 +101,12 @@ const Offerings = ({ offeringContent }) => {
                         itemClass="carousel-item-padding-40-px"
                     >
                         {OfferingKeys.map((key, index) => {
-                                return (
-                                    <div className="card offering-key-card">
+                            return (
+                                <div className="card offering-key-card">
                                     <div className="card-body offering-key" onClick={() => setCarouselKey(key)}>{key}</div>
-                                        </div>
-                                )
-                            }
+                                </div>
+                            )
+                        }
                         )}
                     </Carousel>
 
