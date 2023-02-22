@@ -61,14 +61,12 @@ const Offerings = ({ offeringContent }) => {
                             <OfferingLogoArrow />
                         </span>
                     </div>
-                    <div>
-                        <hr style={{ color: "#8E8E8E", height: "170px", width: "0px", position: "relative" }} />
-                    </div>
+                    
                     <Card className="offering-card">
                         <Card.Body>
                             <Card.Title className="offering-card-title">{carouselkey}</Card.Title>
-                            <Card.Text>
-                                <ul>
+                            <Card.Text className="">
+                                <ul className="offering-card-ul">
                                     {
                                         offeringContent.offeringCarousel[carouselkey].map((item, index) => {
                                             return (

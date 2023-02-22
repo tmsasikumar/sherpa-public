@@ -44,7 +44,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  border-right: 2px solid #ffffff;
+  margin: 40px 0;
 }
 
 
@@ -60,8 +61,6 @@
   width: 603px;
   min-height: 308px;
   background: #333F52;
-  float: left !important;
-  border: none !important;
   overflow: hidden;
 }
 
@@ -101,9 +100,12 @@
   margin-right: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
+  .offering-logo-container{
+    border: none !important;
+  }
  .offering-logo-container {
-   display: none;
+   display: none !important;
  }
 }
 .arrow{
@@ -111,55 +113,128 @@
 }
 
 hr{
-      margin-top: 4rem;   
+   margin-top: 4rem;   
 }
 
 .offering-list-items{
   color: #FFFFFF;
   font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-margin-bottom: 15px;
+  font-style: normal; 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.offering-card{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 45px; 
 }
 
 .offering-item{
-  position: relative;
-  left: -140px;
-  margin-top: 24px;
+  display: inline-block;
+  color: #FFFFFF;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.offering-list-items {
+  margin-top: 10px;
+}
+.offering-card-ul{
+  margin: 0;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;  
 }
 
 .offering-card-title{
-  margin-top: 42px;
-  position: relative;
-  left: -161px;
+  margin-top: 25px;
   color:#A3FA8D;
   font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 22px;
-line-height: 33px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  text-align: left;
+}
+
+.offering-card-text {
+  height: 100px; /* Adjust this value as needed */
 }
 
 .offering-card-btn{
-  position:relative;
-  left: -198px;
   border-radius: 5px;
+  margin-top: 0px !important;
   border: 2px solid #A3FA8D;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 21px;
-background-color: #0C152C;
-color: #A3FA8D;
-width: 115px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #0C152C;
+  color: #A3FA8D;
+  width: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; 
+}
+
+@media (min-width: 900px) and (max-width: 1075px) {
+
+  .offering-card-btn {
+    margin-top: 25px !important;
+  }
+
+  .offering-logo-container{
+    padding: 0 45px !important;
+  }
+
+  
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .offering-logo-container{
+    padding : 0 20px;
+  }
+  .offering-card{
+    margin-left: 10px;
+  }
+}
+
+@media ( min-width: 481px) and (max-width: 504px){
+  
+  .offering-card{
+    margin-left: 23px;
+  }
+}
+
+@media ( max-width: 480px ){
+  .offering-card-title {
+    margin-top: 0px !important;
+  }
+
+  .offering-card{
+    margin: 0px!important;
+  }
+
 }
 
 .carousel-container{
-   width: 65%;
-  margin-left: 17.5%;
+  width: 65%;
+  margin-left: 17.5%; 
   margin-right: 17.5%;
   padding-top: 5%;
 }
+
