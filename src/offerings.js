@@ -107,7 +107,8 @@ const Offerings = ({ offeringContent }) => {
                         }
                         )}
                     </Carousel>
-
+                    <div className="offering-border">
+                    </div>
                 </div>
             </div>
         </section>

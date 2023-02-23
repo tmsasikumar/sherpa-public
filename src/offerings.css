@@ -1,7 +1,7 @@
 .offerings-content {
   background: #273141;
   overflow: auto;
-  min-height: 95vh;
+  min-height: 100vh;
 }
 
 .offerings-container{
@@ -73,10 +73,6 @@
   max-height: 100%;
 }
 
-.react-multi-carousel-list, .offering-control {
-  min-height: 300px;
-}
-
 .offering-key {
   width: 100%;
   font-family: 'Poppins';
@@ -87,16 +83,19 @@
   text-align: center;
   background: #0C152C;
   color: #FFFFFF;
-
+  border: 1px solid #62DB85;
+  box-shadow: 0px 0px 4px rgba(248, 120, 93, 0.25) !important;
+  border-radius: 5px;
+  height: 100px;
 }
 
 .offering-key:hover {
   cursor:pointer;
+
 }
 
 .react-multi-carousel-item {
   background: #0C152C;
-  width: 202px;
   margin-right: 20px;
 }
 
@@ -214,7 +213,7 @@ hr{
 }
 
 @media ( min-width: 481px) and (max-width: 504px){
-  
+
   .offering-card{
     margin-left: 23px;
   }
@@ -238,3 +237,18 @@ hr{
   padding-top: 5%;
 }
 
+.offering-control{
+  position: relative;
+}
+
+.offering-border {
+  position: absolute;
+  height: 15%;
+  left:-27px;
+  right: -27px;
+  bottom: -35px;
+  width: calc(100% + 54px);
+  border-left: 1px solid #4C5D78;
+  border-right: 1px solid #4C5D78;
+  border-bottom: 1px solid #4C5D78;
+}
