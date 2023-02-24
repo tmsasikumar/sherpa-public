@@ -23,13 +23,25 @@ const Offerings = ({ offeringContent }) => {
             items: 4
         },
         tablet: {
-            breakpoint: { max: 1024, min: 464 },
+            breakpoint: { max: 1024, min: 600 },
             items: 3
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
-            items: 2
+            items: 1
+        },
+        custom: {
+            breakpoint: { max: 600, min: 464 },
+            items: 2,
+            style: {
+                carousel: {
+                    container: {
+                        minHeight: "25vh"
+                    }
+                }
+            }
         }
+
     };
 
     let OfferingKeys = Object.keys(offeringContent.offeringCarousel);
@@ -93,14 +105,14 @@ const Offerings = ({ offeringContent }) => {
                         keyBoardControl={true}
                         customTransition="all .5"
                         transitionDuration={500}
-                        containerClass="carousel-container"
-                        removeArrowOnDeviceType={["tablet", "mobile"]}
+                        containerClass="carousels-container"
+                        removeArrowOnDeviceType={["tablet", "mobile", "custom"]}
                         dotListClass="custom-dot-list-style"
-                        itemClass="carousel-item-padding-40-px"
+                        itemClass="carousels-item-padding-40-px"
                     >
                         {OfferingKeys.map((key, index) => {
                             return (
-                                <div className="card offering-key-card">
+                                <div className="card card-m-15 offering-key-card">
                                     <div className="card-body offering-key" onClick={() => setCarouselKey(key)}>{key}</div>
                                 </div>
                             )

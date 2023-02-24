@@ -1,14 +1,14 @@
 .offerings-content {
   background: #273141;
   overflow: auto;
-  min-height: 100vh;
+  min-height: 95vh;
 }
 
 .offerings-container{
   width: 65%;
   margin-left: 17.5%;
   margin-right: 17.5%;
-  padding-top: 5%;
+  padding-top: 10px;
 }
 
 .offerings-title {
@@ -94,9 +94,29 @@
 
 }
 
-.react-multi-carousel-item {
+@media only screen and (max-width: 670px) {
+  .offering-key {
+    height: 140px;
+  }
+}
+
+@media (max-width: 464px) and (min-width: 463px) {
+  .offering-key {
+    height: 115px;
+  }
+}
+
+@media only screen and (max-width: 463px) {
+  .offering-key {
+    height: 70px;
+  }
+}
+
+
+.react-multi-carousels-item {
   background: #0C152C;
-  margin-right: 20px;
+  width: 15% !important;
+  margin: 20px !important;
 }
 
 @media only screen and (max-width: 700px) {
@@ -109,10 +129,6 @@
 }
 .arrow{
   position: absolute;
-}
-
-hr{
-   margin-top: 4rem;   
 }
 
 .offering-list-items{
@@ -230,11 +246,9 @@ hr{
 
 }
 
-.carousel-container{
-  width: 65%;
-  margin-left: 17.5%; 
-  margin-right: 17.5%;
-  padding-top: 5%;
+.carousels-container{
+  width: 100%;
+  padding: 35px 0;
 }
 
 .offering-control{
@@ -247,8 +261,11 @@ hr{
   left:-27px;
   right: -27px;
   bottom: -35px;
-  width: calc(100% + 54px);
   border-left: 1px solid #4C5D78;
   border-right: 1px solid #4C5D78;
   border-bottom: 1px solid #4C5D78;
+}
+
+.card-m-15{
+  margin: 0 15px;
 }
