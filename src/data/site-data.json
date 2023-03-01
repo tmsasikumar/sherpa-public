@@ -46,6 +46,30 @@
         "Exposure to all industrial stuff"
       ]
     }
-    }
+    },
+    "techStationContent": {
+    "header": [
+      {
+        "image1": "./images/arrow1.svg"
+      },
+       {
+        "image2": "./images/arrow2.svg"
+      },
+      {
+        "content": "What you will Learn ?"
+      }
+
+    ],
+
+    "mainContent": [
+      {
+        "content1": "Front End"
+      },
+      {
+        "content2": "Back End"
+      }
+    ]
+   }
+   
   }
 }

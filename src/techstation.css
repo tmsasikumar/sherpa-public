@@ -1,0 +1,184 @@
+.techstation-section{
+  background: #273141;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.techstation-container {
+  width: 65%;
+  margin-left: 17.5%;
+  margin-right: 17.5%;
+  margin-top: 13%;
+  margin-bottom: 13%; 
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  position: relative;
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+.image1 arrows {
+  position: absolute;
+  z-index: 2;
+}
+
+.image2 arrows {
+  position: absolute;
+  z-index: 2;
+}
+
+.arrows svg {
+  fill: #EBEBEB;
+  
+}
+
+ .arrow-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+
+  }
+
+
+.header-text {
+  display:flex;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+}
+
+.techstation-text{
+  margin: 0 4px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.techstation-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.left-card{
+  width: 47.5%;
+  position: relative;
+  height: 229px;
+}
+
+
+.left-card1{
+  width:100%;
+  height: 229px;
+  background: radial-gradient(54.61% 196.14% at 50.23% 48.8%, #3C792D 0%, #000000 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 10px;
+  position: absolute;
+  z-index:1;
+}
+
+.left-card2{
+  margin-top: 19px;
+  width:100%;
+  height: 229px;
+  background: linear-gradient(105.52deg, #314E7D -4.66%, #134088 104.5%);
+  border-radius: 10px;
+  position: absolute;
+  z-index: 0;
+}
+
+.left-card-text{
+  align-items: center;
+  position:absolute;
+  z-index: 2;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #EBEBEB;
+
+}
+
+.right-card{
+  width: 47.5%;
+  position: relative;
+  height: 229px;
+}
+
+.right-card1{
+  width:100%;
+  height: 229px;
+  background: radial-gradient(54.61% 196.14% at 50.23% 48.8%, #277171 0%, #000000 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 10px;
+  position: absolute;
+  z-index:1;
+}
+
+.right-card2{
+  margin-top: 19px;
+  width:100%;
+  height: 229px;
+  background: linear-gradient(254.52deg, #323FAF -6.09%, rgba(95, 70, 137, 0.99) 104.39%);
+  border-radius: 10px;
+  position: absolute;
+  z-index: 0;
+}
+
+.right-card-text{
+  align-items: center;
+  position:absolute;
+  z-index: 2;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #EBEBEB;
+
+}
+
+
+.left-card-text, .right-card-text{
+  position: absolute;
+  z-index: 2;
+  align-items: center;
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+@media (max-width: 600px) {
+  .techstation-card {
+    flex-direction: column;
+  }
+  .left-card, .right-card {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 370px) {
+
+  .techstation-text{
+  margin: 0 2px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+}
