@@ -8,7 +8,7 @@
   width: 65%;
   margin-left: 17.5%;
   margin-right: 17.5%;
-  margin-top: 13%;
+  margin-top: 2%;
 }
 
 .offerings-title {
@@ -134,7 +134,7 @@
 .offering-list-items{
   color: #FFFFFF;
   font-family: 'Poppins';
-  font-style: normal; 
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -147,7 +147,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: 45px; 
+  margin-left: 45px;
 }
 
 .offering-item{
@@ -170,7 +170,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;  
+  align-items: flex-start;
 }
 
 .offering-card-title{
@@ -203,7 +203,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center; 
+  align-items: center;
 }
 
 @media (min-width: 900px) and (max-width: 1075px) {
@@ -216,7 +216,7 @@
     padding: 0 45px !important;
   }
 
-  
+
 }
 
 @media (min-width: 700px) and (max-width: 899px) {

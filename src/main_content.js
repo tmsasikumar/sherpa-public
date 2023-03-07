@@ -30,7 +30,7 @@ const MainContent = ({mainContent}) => {
                                     <div className={`carousel-item ${index === 0 && `active`}`}>
                                         <h3 className="content-value">{d.content}</h3>
                                         <Image
-                                            className="d-block w-100 img-fluid"
+                                            className="d-block w-100 img-fluid main-carousel-img"
                                             src={require(`${d.image}`)}
                                             alt={`slide-${index}`}
                                         />

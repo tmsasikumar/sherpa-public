@@ -15,7 +15,7 @@ const techstation = ({ techStationContent }) => {
     return (
         <section className="techstation-section">
             <div className="techstation-container">
-                <div className="header">
+                <div className="techstation-header">
                     <div className="arrow-wrapper">
                         <div className="image1 arrows">
                             <ArrowDown />

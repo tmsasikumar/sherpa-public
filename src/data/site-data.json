@@ -9,16 +9,16 @@
   "mainData": {
     "mainContent": [
       {
-        "content": "Founded by ThoughtWorks Alums - Pioneers of agile way of software development",
-        "image": "./images/agile-new.png"
+        "content": "Founded by ThoughtWorks Alumni - Pioneers of Agile methodology of software development",
+        "image": "./images/agile-web.png"
       },
       {
-        "content": "Real world Organisation Projects that helps build strong foundational skills",
-        "image": "./images/placement.jpeg"
+        "content": "Get hands-on Product Development experience with an emphasis on the highest coding standards",
+        "image": "./images/realworldtraining-web.png"
       },
       {
-        "content": "Placement in well funded, tech-startups looking for quality talent",
-        "image": "./images/placement.jpeg"
+        "content": "An opportunity to work for high-growth Tech Startups with potential for exponential growth",
+        "image": "./images/startup-web.png"
       }
     ],
     "offeringContent": {
@@ -70,6 +70,6 @@
       }
     ]
    }
-   
+
   }
 }

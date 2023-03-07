@@ -8,11 +8,11 @@
   width: 65%;
   margin-left: 17.5%;
   margin-right: 17.5%;
-  margin-top: 13%;
-  margin-bottom: 13%; 
+  margin-top: 3%;
+  margin-bottom: 7%;
 }
 
-.header {
+.techstation-header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -36,7 +36,7 @@
 
 .arrows svg {
   fill: #EBEBEB;
-  
+
 }
 
  .arrow-wrapper {
