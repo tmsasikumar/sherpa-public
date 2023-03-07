@@ -41,6 +41,17 @@ const techstation = ({ techStationContent }) => {
                 </div>
                 <div className="techstation-card">
                     <div className="left-card">
+                        <Card className="left-card1-icons card-icons">
+                            {
+                                techStationContent.mainContent[0].tech_icons.map((icon,index) => (
+                                <Card.Body>
+                                    <Card.Text className="left-card-text">
+                                        {icon.name}
+                                    </Card.Text>
+                                </Card.Body>
+                                ))
+                            }
+                        </Card>
                         <Card className="left-card1">
                             <Card.Body>
                                 <Card.Text className="left-card-text">

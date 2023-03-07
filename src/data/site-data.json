@@ -63,10 +63,36 @@
 
     "mainContent": [
       {
-        "content1": "Front End"
+        "content1": "FullStack",
+        "tech_icons": [
+          {
+            "name": "Html",
+            "image": "./images/html.svg"
+          },
+          {
+            "name": "Css",
+            "image": "./images/css.svg"
+          },
+          {
+            "name": "nodejs",
+            "image": "./images/node.svg"
+          },
+          {
+            "name": "Typescript",
+            "image": "./images/typescript.svg"
+          },
+          {
+            "name": "Javascript",
+            "image": "./images/javascript.svg"
+          },
+          {
+            "name": "React",
+            "image": "./images/react.svg"
+          }
+        ]
       },
       {
-        "content2": "Back End"
+        "content2": "Cloud & Others"
       }
     ]
    }
