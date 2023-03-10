@@ -1,16 +1,31 @@
 import * as React from "react";
+import { useState } from "react";
 import "./techstation.css";
-import { Image } from "react-bootstrap";
-import { includes } from "lodash";
 import { ReactComponent as ArrowDown } from './images/arrow1.svg';
 import { ReactComponent as ArrowUP } from './images/arrow2.svg';
+import { includes } from "lodash";
+import { ReactComponent as HTML } from './images/html.svg';
+
+
 
 import Card from 'react-bootstrap/Card';
 
 
-const techstation = ({ techStationContent }) => {
+const Techstation = ({ techStationContent }) => {
+
+    const [showLeft, setShowLeft] = useState(false);
+    const [showRight, setShowRight] = useState(false);
+
 
     const words = techStationContent.header[2].content.split(' ');
+
+    const handleLeftHover = () => {
+        setShowLeft(!showLeft);
+    }
+
+    const handleRightHover = () => {
+        setShowRight(!showRight);
+    }
 
     return (
         <section className="techstation-section">
@@ -40,18 +55,70 @@ const techstation = ({ techStationContent }) => {
                     </div>
                 </div>
                 <div className="techstation-card">
+                        {/* <div className="col-sm-6 front-end"> */}
+                            <div className="card lefthover-card" >
+                                <div className="row">
+                                    <div className="col-sm-4 col-6 ">
+                                        <h5> HTML</h5>
+                                        <HTML />
+                                    </div>
+                                    <div className="col-sm-4 col-6">
+                                        <h5> HTML</h5>
+                                        <HTML />
+                                    </div>
+                                    <div className="col-sm-4 col-6">
+                                        <h5> HTML</h5>
+                                        <HTML />
+                                    </div>
+                                    <div className="col-sm-4 col-6">
+                                        <h5> HTML</h5>
+                                        <HTML />
+                                    </div>
+                                    <div className="col-sm-4 col-6">
+                                        <h5> HTML</h5>
+                                        <HTML />
+                                    </div>
+                                    <div className="col-sm-4 col-6">
+                                        <h5> HTML</h5>
+                                        <HTML />
+                                    </div>
+                                </div>
+                            {/* </div> */}
+                        </div>
+                        {/* <div className="col-sm-6 back-end"> */}
+                            <div className="card righthover-card" >
+                                <div className="row">
+                                    <div className="col-sm-4 col-6">
+                                        <h5> HTML</h5>
+                                        <HTML />
+                                    </div>
+                                    <div className="col-sm-4 col-6">
+                                        <h5> HTML</h5>
+                                        <HTML />
+                                    </div>
+                                    <div className="col-sm-4 col-6">
+                                        <h5> HTML</h5>
+                                        <HTML />
+                                    </div>
+                                    <div className="col-sm-4 col-6">
+                                        <h5> HTML</h5>
+                                        <HTML />
+                                    </div>
+                                    <div className="col-sm-4 col-6">
+                                        <h5> HTML</h5>
+                                        <HTML />
+                                    </div>
+                                    <div className="col-sm-4 col-6">
+                                        <h5> HTML</h5>
+                                        <HTML />
+                                    </div>
+                                </div>
+                            </div>
+                        {/* </div> */}
+                </div>
+                {/* <div className="techstation-card">
                     <div className="left-card">
-                        <Card className="left-card1-icons card-icons">
-                            {
-                                techStationContent.mainContent[0].tech_icons.map((icon,index) => (
-                                <Card.Body>
-                                    <Card.Text className="left-card-text">
-                                        {icon.name}
-                                    </Card.Text>
-                                </Card.Body>
-                                ))
-                            }
-                        </Card>
+
                         <Card className="left-card1">
                             <Card.Body>
                                 <Card.Text className="left-card-text">
@@ -60,6 +127,16 @@ const techstation = ({ techStationContent }) => {
                             </Card.Body>
                         </Card>
                         <Card className="left-card2" />
+                        <Card className="left-card1-icons card-icons">
+                            {
+                                techStationContent.mainContent.tech_icons.map((icon, index) => (
+                                    <div className="card-icon">
+                                        <img src={icon.image} alt={icon.name} />
+                                        <span>{icon.name}</span>
+                                    </div>
+                                ))
+                            }
+                        </Card>
                     </div>
                     <div className="right-card">
                         <Card className="right-card1">
@@ -71,11 +148,11 @@ const techstation = ({ techStationContent }) => {
                         </Card>
                         <Card className="right-card2" />
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     )
 
 }
 
-export default techstation
+export default Techstation

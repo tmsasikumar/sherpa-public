@@ -22,80 +22,134 @@
       }
     ],
     "offeringContent": {
-
       "title": "What we offer ?",
-
       "titleContent": "We have mutiple offerings to upskill candidates and we are different from other players",
-
       "offeringCarousel": {
-
-      "Pair Programming": [
-        "Learn by pairing with mentors",
-        "10x speed learning by pairing"
-      ],
-      "Emerging Startups" : [
-        "Work with emerging startups",
-        "Opportunity to get placed directly in the startup"
-      ],
-      "Community" : [
-        "Become Part of a community of developers",
-        "Support in overall growth and aspects of Career"
-      ],
-      "Others" : [
-        "Learn best practises in development and testing",
-        "Exposure to all industrial stuff"
-      ]
-    }
+        "Pair Programming": [
+          "Learn by pairing with mentors",
+          "10x speed learning by pairing"
+        ],
+        "Emerging Startups": [
+          "Work with emerging startups",
+          "Opportunity to get placed directly in the startup"
+        ],
+        "Community": [
+          "Become Part of a community of developers",
+          "Support in overall growth and aspects of Career"
+        ],
+        "Others": [
+          "Learn best practises in development and testing",
+          "Exposure to all industrial stuff"
+        ]
+      }
     },
     "techStationContent": {
-    "header": [
-      {
-        "image1": "./images/arrow1.svg"
-      },
-       {
-        "image2": "./images/arrow2.svg"
-      },
-      {
-        "content": "What you will Learn ?"
+      "header": [
+        {
+          "image1": "./images/arrow1.svg"
+        },
+        {
+          "image2": "./images/arrow2.svg"
+        },
+        {
+          "content": "What you will Learn ?"
+        }
+      ],
+      "techContent": [
+        {
+          "content1": "FullStack",
+          "tech_icons": [
+            {
+              "name": "Html",
+              "image": "./images/html.svg"
+            },
+            {
+              "name": "Css",
+              "image": "./images/css.svg"
+            },
+            {
+              "name": "nodejs",
+              "image": "./images/node.svg"
+            },
+            {
+              "name": "Typescript",
+              "image": "./images/typescript.svg"
+            },
+            {
+              "name": "Javascript",
+              "image": "./images/javascript.svg"
+            },
+            {
+              "name": "React",
+              "image": "./images/react.svg"
+            }
+          ]
+        },
+        {
+          "content2": "Cloud & Others"
+        }
+      ],
+      "registrationForm": {
+        "header": [
+          {
+            "title": "Joining Process_ "
+          }
+        ],
+        "content": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever ",
+        "footer": "Free coaching for underprivileged students !"
       }
-
-    ],
-
-    "mainContent": [
-      {
-        "content1": "FullStack",
-        "tech_icons": [
+    },
+    "learningResources": {
+      "header": "Learning Resources ",
+      "content": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever ",
+      "card-content": {
+        "Github": [
           {
-            "name": "Html",
-            "image": "./images/html.svg"
-          },
+            "image": "",
+            "header": "Github + Text editor setup",
+            "content": " simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever  "
+          }
+        ],
+        "SwissArmyKnife": [
           {
-            "name": "Css",
-            "image": "./images/css.svg"
-          },
+            "image": "",
+            "header": "Swiss Army Knife ",
+            "content": " simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever  "
+          }
+        ],
+        "CrudOperations": [
           {
-            "name": "nodejs",
-            "image": "./images/node.svg"
-          },
-          {
-            "name": "Typescript",
-            "image": "./images/typescript.svg"
-          },
-          {
-            "name": "Javascript",
-            "image": "./images/javascript.svg"
-          },
-          {
-            "name": "React",
-            "image": "./images/react.svg"
+            "image": "",
+            "header": "CRUD Operations",
+            "content": " simply dummy text of the printing and typesetting industry. "
           }
         ]
       },
-      {
-        "content2": "Cloud & Others"
+      "Mentorship": {
+        "header": [
+          {
+            "image": "",
+            "title": "Mentorship",
+            "content": "simply dummy text of the printing and typesetting industry."
+          }
+        ],
+        "Mentors": [
+          {
+            "name": "",
+            "designation": "designation",
+            "image": "",
+            "picture": "",
+            "description": "simply dummy text of the printing and typesetting industry. "
+          },
+          {
+            "name": "",
+            "designation": "designation",
+            "image": "",
+            "picture": "",
+            "description": "simply dummy text of the printing and typesetting industry. "
+          }
+        ]
       }
-    ]
-   }
-
+    }
   }
 }

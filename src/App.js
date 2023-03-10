@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import * as React from "react"
 import configData from "./data/site-data.json"
 import Header from "./header"
 import MainComponent from "./main_component"
-import Offerings from './offerings';
 import Footer from "./footer"
 
 function App() {

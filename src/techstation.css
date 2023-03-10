@@ -1,4 +1,4 @@
-.techstation-section{
+.techstation-section {
   background: #273141;
   overflow: hidden;
   min-height: 100vh;
@@ -9,11 +9,9 @@
   margin-left: 17.5%;
   margin-right: 17.5%;
   margin-bottom: 3%;
+  background: #273141 !important;
 }
 
-.card-icons {
-  z-index: 3;
-}
 
 .techstation-header {
   display: flex;
@@ -42,23 +40,23 @@
 
 }
 
- .arrow-wrapper {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    z-index: 2;
-  }
+.arrow-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+}
 
 
 .header-text {
-  display:flex;
+  display: flex;
   text-align: center;
   z-index: 3;
   position: absolute;
 }
 
-.techstation-text{
+.techstation-text {
   margin: 0 4px;
   font-family: 'Poppins';
   font-style: normal;
@@ -67,42 +65,201 @@
   line-height: 30px;
 }
 
-.techstation-card{
+.techstation-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 70px;
+  min-width: 65%;
+  position: absolute;
 }
 
-.left-card{
+.techstation-card .row {
+  min-width: 100%;
+  padding: 1.5rem;
+}
+
+/* .left-card{
   width: 47.5%;
   position: relative;
   height: 229px;
+} */
+
+.front-end {
+  margin-right: 1%;
+  background: radial-gradient(54.61% 196.14% at 50.23% 48.8%, #3C792D 0%, #000000 100%);
+  min-height: 229px;
+
+}
+
+.back-end {
+  background: radial-gradient(54.61% 196.14% at 50.23% 48.8%, #3C792D 0%, #000000 100%);
+  min-height: 229px;
+}
+
+.hover-card {
+  position: relative;
+  margin-top: 70px;
+}
+
+.left-card {
+  background: radial-gradient(54.61% 196.14% at 50.23% 48.8%, #3C792D 0%, #000000 100%);
+  /* height: 229px;
+  width: 434px; */
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.lefthover-card {
+  background: radial-gradient(54.61% 196.14% at 50.23% 48.8%, #532d79 0%, #000000 100%);
+  /* height: 229px;
+  width: 434px; */
+  margin-left: 20px;
+  border-radius: 10px;
 }
 
 
-.left-card1{
-  width:100%;
+.righthover-card {
+  background: radial-gradient(54.61% 196.14% at 50.23% 48.8%, #532d79 0%, #000000 100%);
+  /* height: 229px;
+  width: 434px; */
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 576px) {
+
+  .techstation-card {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+  }
+
+  .lefthover-card {
+    margin-bottom: 20px;
+  }
+
+  .techstation-section {
+    background: #273141;
+    overflow: hidden;
+    min-height: 100vh;
+  }
+}
+
+
+/* .lefthover-card {
+  background: radial-gradient(54.61% 196.14% at 50.23% 48.8%, #532d79 0%, #000000 100%);
   height: 229px;
-  background: radial-gradient(54.61% 196.14% at 50.23% 48.8%, #3C792D 0%, #000000 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  width: 434px;
+  margin-left: 20px;
+  border-radius: 10px;
+} */
+
+
+/* @media  screen  and ( max-width: 576px) {
+  .lefthover-card h5{
+    font-size: 10 px;
+  } 
+  
+} */
+
+.right-card {
+  background: radial-gradient(54.61% 196.14% at 50.23% 48.8%, #3C792D 0%, #000000 100%);
+  /* height: 229px;
+  width: 434px; */
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+/* .left-card1 {
+  width: 100%;
+  height: 229px;
+  background: radial-gradient(54.61% 196.14% at 50.23% 48.8%, #3C792D 0%, #000000 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+/* ;
   border-radius: 10px;
   position: absolute;
-  z-index:1;
-}
+  z-index: 1;
+} */
 
-.left-card2{
+/* .card-icons {
+  z-index: 3;
+  position: absolute;
+  height: 229px;
+  width: 100%;
+  display: none;
+
+} */
+
+/* .left-card1:hover+.card-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .left-card1-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+} */
+
+/* .left-card-text {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 40px;
+} */
+
+/* .left-card-text:first-child {
+  margin-top: 40px;
+} */
+
+/* .left-card-text:not(:last-child) {
+  margin-bottom: 20px;
+} */
+
+/* .left-card-text span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+} */
+
+/* .card-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  width: 80px;
+} */
+
+/* .card-icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+} */
+
+
+
+
+
+/* .left-card2 {
   margin-top: 19px;
-  width:100%;
+  width: 100%;
   height: 229px;
   background: linear-gradient(105.52deg, #314E7D -4.66%, #134088 104.5%);
   border-radius: 10px;
   position: absolute;
   z-index: 0;
-}
+} */
 
-.left-card-text{
+/* .left-card-text {
   align-items: center;
-  position:absolute;
+  position: absolute;
   z-index: 2;
   font-family: 'Poppins';
   font-style: normal;
@@ -111,36 +268,38 @@
   line-height: 48px;
   color: #EBEBEB;
 
-}
+} */
 
-.right-card{
+/* .right-card {
   width: 47.5%;
   position: relative;
   height: 229px;
-}
+} */
 
-.right-card1{
-  width:100%;
+/* .right-card1 {
+  width: 100%;
   height: 229px;
-  background: radial-gradient(54.61% 196.14% at 50.23% 48.8%, #277171 0%, #000000 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background: radial-gradient(54.61% 196.14% at 50.23% 48.8%, #277171 0%, #000000 100%)
+    warning: gradient uses a rotation that is not supported by CSS and may not behave as expected
+  ;
   border-radius: 10px;
   position: absolute;
-  z-index:1;
-}
+  z-index: 1;
+} */
 
-.right-card2{
+/* .right-card2 {
   margin-top: 19px;
-  width:100%;
+  width: 100%;
   height: 229px;
   background: linear-gradient(254.52deg, #323FAF -6.09%, rgba(95, 70, 137, 0.99) 104.39%);
   border-radius: 10px;
   position: absolute;
   z-index: 0;
-}
+} */
 
-.right-card-text{
+/* .right-card-text {
   align-items: center;
-  position:absolute;
+  position: absolute;
   z-index: 2;
   font-family: 'Poppins';
   font-style: normal;
@@ -149,38 +308,47 @@
   line-height: 48px;
   color: #EBEBEB;
 
-}
+} */
 
 
-.left-card-text, .right-card-text{
+/* .left-card-text,
+.right-card-text {
   position: absolute;
   z-index: 2;
   align-items: center;
-   top: 50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-}
+} */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .techstation-card {
     flex-direction: column;
   }
-  .left-card, .right-card {
+
+  .left-card,
+  .right-card {
     width: 100%;
     margin-bottom: 70px;
   }
-}
+} */
 
-@media (max-width: 370px) {
+/* @media (max-width: 370px) {
 
-  .techstation-text{
-  margin: 0 2px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 25px;
-}
+  .techstation-text {
+    margin: 0 2px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+  }
 
-}
+} */
+
+
+/* .back-end {
+  margin-left: 70px;
+
+} */
